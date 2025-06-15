@@ -1,0 +1,17 @@
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+.card {
+  height: 500px;
+  width: 500px;
+  background-color: yellow;
+
+  @include tablet {
+    height: 1000px;
+    width: 1000px;
+    background-color: blue;
+  }
+}
